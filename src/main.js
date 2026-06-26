@@ -33,6 +33,7 @@ form.addEventListener('submit', async event => {
 
   try {
     const data = await getImagesByQuery(currentQuery, currentPage);
+console.log('hits:', data.hits.length, 'totalHits:', data.totalHits);
     totalHits = data.totalHits;
     hideLoader();
 
