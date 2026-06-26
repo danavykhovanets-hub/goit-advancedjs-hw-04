@@ -101,6 +101,26 @@ body {
   text-transform: uppercase;
 }
 
+.load-more {
+  display: none;
+  margin: 32px auto;
+  padding: 12px 32px;
+  font-size: 16px;
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.load-more--visible {
+  display: block;
+}
+
+.load-more:hover {
+  background: #6c8cff;
+}
+
 .loader {
   display: none;
   width: 40px;
