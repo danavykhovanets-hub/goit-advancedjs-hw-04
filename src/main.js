@@ -33,7 +33,6 @@ form.addEventListener('submit', async event => {
 
   try {
     const data = await getImagesByQuery(currentQuery, currentPage);
-console.log('hits:', data.hits.length, 'totalHits:', data.totalHits);
     totalHits = data.totalHits;
     hideLoader();
 
@@ -71,7 +70,7 @@ loadMoreBtn.addEventListener('click', async () => {
     hideLoader();
     createGallery(data.hits);
 
-    // Плавний скрол на дві висоти картки
+  
     const cardHeight = document.querySelector('.gallery-item').getBoundingClientRect().height;
     window.scrollBy({ top: cardHeight * 2, behavior: 'smooth' });
 
